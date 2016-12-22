@@ -1113,9 +1113,9 @@ public class SeleniumWebDriver {
 	public boolean hasQuit() {
 		try{
 			this.nativeWebDriver.get().getTitle();
-			return true;
-		}catch(Exception e){
 			return false;
+		}catch(Exception e){
+			return true;
 		}
 	}
 		
