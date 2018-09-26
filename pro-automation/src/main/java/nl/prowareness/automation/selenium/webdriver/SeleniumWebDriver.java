@@ -117,6 +117,7 @@ public class SeleniumWebDriver {
 	public SeleniumWebDriver(Environment environment) throws AutomationDriverException {
 		properties=environment;
 		setRepository();
+		setUpBrowser();
 	}
 	
 	public void setSeleniumProxy(Proxy seleniumProxy){
